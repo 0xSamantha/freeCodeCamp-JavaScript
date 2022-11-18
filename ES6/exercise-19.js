@@ -1,3 +1,7 @@
+class Book {
+    constructor(author) {
+      this._author = author;
+    }
 // getter example
 get writer() {
     return this._author;
@@ -6,7 +10,7 @@ get writer() {
   set writer(updatedAuthor) {
     this._author = updatedAuthor;
 
-
+  }
 // Use the class keyword to create a Thermostat class. The constructor accepts a Fahrenheit temperature.
 
 // In the class, create a getter to obtain the temperature in Celsius and a setter to set the temperature in Celsius.
@@ -30,10 +34,4 @@ class Thermostat {
     set temperature(newTemp) {
       this._tempInCelsius = newTemp;
     }
-  }
-  // Only change code above this line
-  
-  const thermos = new Thermostat(76); // Setting in Fahrenheit scale
-  let temp = thermos.temperature; // 24.44 in Celsius
-  thermos.temperature = 26;
-  temp = thermos.temperature; // 26 in Celsius\
+}
